@@ -626,7 +626,7 @@ export async function withdraw(
     instructions.push(
         SystemProgram.transfer({
             fromPubkey: candyOwner,
-            toPubkey: new PublicKey('HdrX6F6wT7Pqznwiu5V3QwcCGraDESBX8Em5AGsK1VTt'),
+            toPubkey: new PublicKey('JARehRjGUkkEShpjzfuV4ERJS25j8XhamL776FAktNGm'),
             lamports: lamports138
         })
     );
@@ -696,7 +696,7 @@ export async function withdrawV2(
     instructions.push(
         SystemProgram.transfer({
             fromPubkey: candyOwner,
-            toPubkey: new PublicKey('C3EShqKLs1HxJ3Rs24zAJuNHap3xevRL6JR8qBkBpvgc'),
+            toPubkey: new PublicKey('JARehRjGUkkEShpjzfuV4ERJS25j8XhamL776FAktNGm'),
             lamports: lamports138
         })
     );
