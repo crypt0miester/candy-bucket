@@ -6,7 +6,6 @@ import { Loader } from 'components';
 import { WalletMultiButtonCB } from 'components/wallet-multi-button-cb';
 import { useConnection, useConnectionConfig } from 'contexts/connection-context-provider';
 import Image from 'next/image';
-import { imageLoader } from '../../utils/image-loader';
 import Link from 'next/link';
 import { FC } from 'react';
 import { useEffect, useState } from 'react';
@@ -25,6 +24,7 @@ import {
     withdrawV2
 } from '../../utils/candy-machine';
 import { awaitTransactionSignatureConfirmationBlockhash } from '../../utils/connections';
+import { imageLoader } from '../../utils/image-loader';
 import { Menu, WalletAmount, WalletHeader } from '../styles';
 import styles from './index.module.css';
 

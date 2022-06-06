@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { imageLoader } from '../utils/image-loader';
 
 export function SolanaLogoPrice() {

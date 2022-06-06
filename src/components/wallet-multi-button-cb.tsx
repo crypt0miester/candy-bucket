@@ -6,11 +6,11 @@ import {
     WalletModalButton
 } from '@solana/wallet-adapter-react-ui';
 import Image from 'next/image';
-import { imageLoader } from '../utils/image-loader';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CSSProperties, MouseEvent, ReactElement } from 'react';
 
 import { ENDPOINTS, useConnectionConfig } from '../contexts/connection-context-provider';
+import { imageLoader } from '../utils/image-loader';
 
 interface ButtonProps {
     className?: string;

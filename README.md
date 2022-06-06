@@ -29,6 +29,7 @@ yarn dev
 Any changes please format the code before the PR
 
 ```bash
+yarn lint
 yarn format
 ```
 
