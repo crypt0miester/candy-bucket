@@ -1,6 +1,6 @@
 # Candy Bucket
 
-Home to candy machine tools on the frontend. Currently only has candy wrapper. 
+Home to candy machine tools on the frontend. Currently only has candy wrapper.
 Which wraps up (withdraws and closes) your candy machine and withdraw the amount to your wallet.
 we do take 1% of the total distributed for future development.
 
@@ -27,6 +27,7 @@ yarn dev
 ```
 
 Any changes please format the code before the PR
+
 ```bash
 yarn format
 ```
@@ -41,7 +42,6 @@ More info here: https://daisyui.com/docs/default-themes
 This app encourage you to use CSS Modules over other style technics (like SASS/LESS, Styled Components, usual CSS).
 It have modular nature and supports modern CSS. [Read more on Next.JS site](https://nextjs.org/docs/basic-features/built-in-css-support).
 Anyway, if you want to connect LESS there is example code in `./next.config.js`
-
 
 ## Deploy on Vercel
 

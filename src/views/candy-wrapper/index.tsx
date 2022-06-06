@@ -5,6 +5,8 @@ import confetti from 'canvas-confetti';
 import { Loader } from 'components';
 import { WalletMultiButtonCB } from 'components/wallet-multi-button-cb';
 import { useConnection, useConnectionConfig } from 'contexts/connection-context-provider';
+import Image from 'next/image';
+import { imageLoader } from '../../utils/image-loader';
 import Link from 'next/link';
 import { FC } from 'react';
 import { useEffect, useState } from 'react';
@@ -58,8 +60,8 @@ export const CandyWrapper: FC = () => {
                     {
                         memcmp: {
                             offset: 0,
-                            bytes: hashConfig,
-                        },
+                            bytes: hashConfig
+                        }
                     },
                     {
                         memcmp: {
@@ -228,7 +230,8 @@ export const CandyWrapper: FC = () => {
             <div className={styles.container}>
                 <div className="navbar mb-2 shadow-lg h-20 bg-neutral text-neutral-content rounded-box">
                     <div className="flex-none">
-                        <img
+                        <Image
+                            loader={imageLoader}
                             src="/images/logo.png"
                             alt="logo"
                             className="my-auto"
@@ -352,7 +355,8 @@ export const CandyWrapper: FC = () => {
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
-                                                                <img
+                                                                <Image
+                                                                    loader={imageLoader}
                                                                     src="/images/icons/sol-logo.png"
                                                                     alt="solana logo"
                                                                     className="rounded-full"
@@ -366,7 +370,8 @@ export const CandyWrapper: FC = () => {
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
-                                                                <img
+                                                                <Image
+                                                                    loader={imageLoader}
                                                                     src="/images/icons/solscan.png"
                                                                     alt="solscan logo"
                                                                     className="my-auto mr-2"
@@ -425,7 +430,8 @@ export const CandyWrapper: FC = () => {
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
-                                                                <img
+                                                                <Image
+                                                                    loader={imageLoader}
                                                                     src="/images/icons/sol-logo.png"
                                                                     alt="solana logo"
                                                                     className="rounded-full"
@@ -439,7 +445,8 @@ export const CandyWrapper: FC = () => {
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
-                                                                <img
+                                                                <Image
+                                                                    loader={imageLoader}
                                                                     src="/images/icons/solscan.png"
                                                                     alt="solscan logo"
                                                                     className="my-auto mr-2"

@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import { imageLoader } from '../utils/image-loader';
 
 export function SolanaLogoPrice() {
     return (
         <Image
+            loader={imageLoader}
             src="/images/icons/sol-logo.png"
             alt="logo"
             className="my-auto"

@@ -584,7 +584,6 @@ function unsafeAccount(account: AccountInfo<[string, string]>) {
     } as AccountInfo<Buffer>;
 }
 
-
 // Thank you jare for the code below
 // Please follow him on twitter https://twitter.com/STACCart
 export async function withdraw(

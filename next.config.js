@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require('next-compose-plugins');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-    enabled: process.env.ANALYZE === 'true',
-  })
+    enabled: process.env.ANALYZE === 'true'
+});
 /** eslint-disable @typescript-eslint/no-var-requires */
 const withTM = require('next-transpile-modules')([
     '@solana/wallet-adapter-base',
@@ -33,10 +33,8 @@ const plugins = [
     //     /* ... */
     //   },
     // }],
+    [withBundleAnalyzer],
     [
-        withBundleAnalyzer
-    ],
-    [   
         withTM,
         {
             webpack5: true,
@@ -47,7 +45,7 @@ const plugins = [
 
 const nextConfig = {
     images: {
-        domains: ['*']
+        loader: 'custom'
     },
     distDir: 'build',
     swcMinify: true,

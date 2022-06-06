@@ -6,6 +6,7 @@ import {
     WalletModalButton
 } from '@solana/wallet-adapter-react-ui';
 import Image from 'next/image';
+import { imageLoader } from '../utils/image-loader';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CSSProperties, MouseEvent, ReactElement } from 'react';
 
@@ -150,6 +151,7 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
                             rel="noreferrer"
                         >
                             <Image
+                                loader={imageLoader}
                                 src="/images/icons/sol-logo.png"
                                 alt="solana logo"
                                 className="rounded-full"
@@ -164,6 +166,7 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
                             rel="noreferrer"
                         >
                             <Image
+                                loader={imageLoader}
                                 src="/images/icons/solscan.png"
                                 alt="solscan logo"
                                 className="my-auto mr-2"
