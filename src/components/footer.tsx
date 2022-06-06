@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className="text-center bg-neutral container mx-auto max-w-6xl mt-auto mb-0 2xl:px-0 text-white">
+        <footer className="text-center bg-[#00153d]  container mx-auto max-w-6xl mt-auto mb-0 2xl:px-0 text-white">
             <div className="container px-6 pt-6">
                 <div className="flex justify-center">
                     <a className="inline-block" href="https://candybucket.io">
@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
 
             <div className="text-center p-4">
-                <a className="text-white" href="https://candy-bucket.io/">
+                <a className="text-white" href="https://github.com/crypt0miester/candy-bucket">
                     Candy Bucket
                 </a>{' '}
                 | Powered by{' '}

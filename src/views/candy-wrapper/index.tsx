@@ -228,7 +228,7 @@ export const CandyWrapper: FC = () => {
     return (
         <div className="container mx-auto max-w-6xl  p-8 2xl:px-0">
             <div className={styles.container}>
-                <div className="navbar mb-2 shadow-lg h-20 bg-neutral text-neutral-content rounded-box">
+                <div className="navbar mb-2 shadow-lg h-20 bg-[#00153d] text-neutral-content rounded-box">
                     <div className="flex-none">
                         <Image
                             loader={imageLoader}
@@ -297,7 +297,7 @@ export const CandyWrapper: FC = () => {
                         </div>
                     </div>
                     {wallet && candyMachinesFetched ? (
-                        <div className="container rounded-box bg-neutral pb-4 mb-5 mx-auto">
+                        <div className="container rounded-box bg-[#00153d] pb-4 mb-5 mx-auto">
                             <br />
                             {wallet && cMFoundV1 && cMFoundV1?.length > 0 && (
                                 <h3>
@@ -495,7 +495,7 @@ export const CandyWrapper: FC = () => {
                     ) : (
                         <div className="text-2xl my-6">{liveWallet.connected && <Loader />}</div>
                     )}
-                    <div className="container rounded-box bg-neutral p-4 mx-auto divide-y ">
+                    <div className="container rounded-box bg-[#00153d] p-4 mx-auto divide-y ">
                         <div className="m-4 text-left">
                             <h2 className="text-2xl my-4">What is Candy bucket?</h2>
                             <p>

@@ -5,7 +5,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 18px;
-    background-color: #00153d;
+    background-color: hsl(var(--n) / var(--tw-bg-opacity));
     display: flex;
     min-height: 100vh;
     flex-direction: column;
