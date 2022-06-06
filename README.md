@@ -26,6 +26,11 @@ yarn install
 yarn dev
 ```
 
+Any changes please format the code before the PR
+```bash
+yarn format
+```
+
 ## Style
 
 [Tailwind CSS](https://tailwindcss.com/) or [daisyUI](https://daisyui.com/) are selected tools for rapid style development.
@@ -36,6 +41,7 @@ More info here: https://daisyui.com/docs/default-themes
 This app encourage you to use CSS Modules over other style technics (like SASS/LESS, Styled Components, usual CSS).
 It have modular nature and supports modern CSS. [Read more on Next.JS site](https://nextjs.org/docs/basic-features/built-in-css-support).
 Anyway, if you want to connect LESS there is example code in `./next.config.js`
+
 
 ## Deploy on Vercel
 
