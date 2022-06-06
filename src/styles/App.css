@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    background-color: #00153d;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+#__react-alert__ div div div {
+    width: auto !important;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    text-transform: initial !important;
+    font: inherit !important;
+    padding: 8px 10px;
+}
+
+h6.pd-property-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-body);
+    margin-bottom: 10px;
+}
+
+.container-property-wrapper {
+    margin-top: 30px;
+}
+
+.property-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -7px;
+}
+
+.property-inner {
+    padding: 10px 15px;
+    border-radius: 6px;
+    max-width: 200px;
+    margin: 7px;
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(15px);
+}
+
+.property-inner-large {
+    padding: 10px 15px;
+    border-radius: 6px;
+    /* max-width: 200px; */
+    margin: 7px;
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(15px);
+}
+
+.property-inner > span.value,
+.property-inner-large > span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.property-inner > span.value,
+.property-inner-large > span:last-child {
+    margin: 0;
+}
+.property-inner > span.value,
+.property-inner-large > span.type {
+    font-size: 12px;
+}
+.property-inner > span.value,
+.property-inner-large > span.value {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
