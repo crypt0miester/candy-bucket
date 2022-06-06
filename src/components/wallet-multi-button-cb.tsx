@@ -131,7 +131,7 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
             <ul
                 aria-label="dropdown-list"
                 className={`wallet-adapter-dropdown-list 
-                ${active && 'wallet-adapter-dropdown-list-active'}`}
+                ${active && 'wallet-adapter-dropdown-list-active '}`}
                 ref={ref}
                 role="menu"
             >
@@ -143,10 +143,10 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
                     }}
                     role="menuitem"
                 >
-                    <div className="grid grid-flow-col justify-items-center">
+                    <div className="grid grid-flow-col justify-items-center align-middle justify-center">
                         <a
                             href={solExplorerAccountUrl(base58)}
-                            className="my-auto mx-1 pointer-events-auto cursor-pointer"
+                            className="my-auto mx-1 pointer-events-auto cursor-pointer mr-2 mt-1"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -155,13 +155,13 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
                                 src="/images/icons/sol-logo.png"
                                 alt="solana logo"
                                 className="rounded-full"
-                                width={20}
-                                height={20}
+                                width={19}
+                                height={19}
                             />
                         </a>
                         <a
                             href={solscanAccountUrl(base58)}
-                            className="my-auto pointer-events-auto cursor-pointer"
+                            className="my-auto pointer-events-auto cursor-pointer mr-2 mt-1"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -169,7 +169,7 @@ export const WalletMultiButtonCB: FC<ButtonProps> = ({ children, ...props }) => 
                                 loader={imageLoader}
                                 src="/images/icons/solscan.png"
                                 alt="solscan logo"
-                                className="my-auto mr-2"
+                                className="my-auto"
                                 width={16}
                                 height={16}
                             />
