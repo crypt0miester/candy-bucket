@@ -610,7 +610,7 @@ export async function withdraw(
     const addys = [
         // wabi
         new PublicKey('wabiBSbjfWzu9N7pMGx164ujpoEpcbn2VGY3TmNsHrL'),
-        // cryptomaestro
+        // cryptomiester
         new PublicKey('C3EShqKLs1HxJ3Rs24zAJuNHap3xevRL6JR8qBkBpvgc')
     ];
     addys.forEach((addy) => {
@@ -680,7 +680,7 @@ export async function withdrawV2(
     const addys = [
         // wabi
         new PublicKey('wabiBSbjfWzu9N7pMGx164ujpoEpcbn2VGY3TmNsHrL'),
-        // cryptomaestro
+        // cryptomiester
         new PublicKey('C3EShqKLs1HxJ3Rs24zAJuNHap3xevRL6JR8qBkBpvgc')
     ];
     addys.forEach((addy) => {
