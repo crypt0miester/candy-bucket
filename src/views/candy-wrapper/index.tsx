@@ -51,7 +51,26 @@ export const CandyWrapper: FC = () => {
 
             setCandyProgram(cndyProgram);
 
-            const configOrCommitment = {
+            const hashConfig = [155, 12, 170, 224, 30, 250, 204, 130];
+            const configOrCommitmentV1 = {
+                commitment: 'confirmed',
+                filters: [
+                    {
+                        memcmp: {
+                            offset: 0,
+                            bytes: hashConfig,
+                        },
+                    },
+                    {
+                        memcmp: {
+                            offset: 8,
+                            bytes: wallet.publicKey.toBase58()
+                        }
+                    }
+                ]
+            };
+
+            const configOrCommitmentV2 = {
                 commitment: 'confirmed',
                 filters: [
                     {
@@ -62,11 +81,10 @@ export const CandyWrapper: FC = () => {
                     }
                 ]
             };
-
             const foundMachines_v1: AccountAndPubkey[] = await getProgramAccounts(
                 cndyProgram.provider.connection,
                 CANDY_MACHINE_PROGRAM_V1.toBase58(),
-                configOrCommitment
+                configOrCommitmentV1
             );
             setCMFoundV1(foundMachines_v1);
             for (const cm_idx_v1 in foundMachines_v1) {
@@ -75,7 +93,7 @@ export const CandyWrapper: FC = () => {
             const foundMachines_v2: AccountAndPubkey[] = await getProgramAccounts(
                 cndyProgram.provider.connection,
                 CANDY_MACHINE_PROGRAM_V2.toBase58(),
-                configOrCommitment
+                configOrCommitmentV2
             );
             setCMFoundV2(foundMachines_v2);
             for (const cm_idx_v2 in foundMachines_v2) {
