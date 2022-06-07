@@ -44,9 +44,6 @@ This app encourage you to use CSS Modules over other style technics (like SASS/L
 It have modular nature and supports modern CSS. [Read more on Next.JS site](https://nextjs.org/docs/basic-features/built-in-css-support).
 Anyway, if you want to connect LESS there is example code in `./next.config.js`
 
-## Deploy on Vercel
+## Deployment
 
-Before push run localy `yarn build` to make sure app can be build succesffully on vercel .
-
-Vercel will automatically create environment and deployment for you if you have vercel account connected to your GitHub account. Go to the vercel.com to connect it.
-Then any push to `main` branch will automatically rebuild and redploy app.
+Before push run localy `yarn build && yarn export` to make sure app can be build successfully.
