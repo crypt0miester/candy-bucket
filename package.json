@@ -6,8 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "nxthelp": "next start --help",
-        "start": "next start dist/*",
-        "export": "next export -o dist/build",
+        "start": "next start",
+        "export": "next export -o dist",
         "lint": "eslint --fix .",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
         "test": "jest --no-watchman"
