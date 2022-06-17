@@ -505,6 +505,11 @@ const tpuConnection = TpuConnection.load(rpcurl, { commitment: 'processed' });
     tx.feePayer = wallet.payer
     const signers = [wallet.payer]
     tx = await wallet.signTransaction(tx);
+    
+    const block: BlockhashWithExpiryBlockHeight = await connection.getLatestBlockhash(commitment);
+    tx.recentBlockhash = block.blockhash;
+    tx.lastValidBlockHeight = block.lastValidBlockHeight;
+    
     const signature = await tpuConnection.sendAndConfirmTransaction(tx, ...signers);
 })();
 
